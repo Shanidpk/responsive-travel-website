@@ -53,7 +53,7 @@
   --z-fixed: 100;
 
   /*========== Hover overlay ==========*/
-  --img-transition: .3s;
+  --img-transition: 0.1s;
   --img-hidden: hidden;
   --img-scale: scale(1.1);
 }
@@ -828,6 +828,20 @@ input {
     padding: 0;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+  position: fixed;
+  background-color: var(--body-color);
+  top: 0;
+  right: -100%;
+  width: 70%;
+  height: 100%;
+  box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
+  padding: 3rem;
+  transition: .2s;
+  }
+  }
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
